@@ -6,7 +6,8 @@
        "Sinds": " januari 1588",
        "Inwoners": "17.084.719",
        "taal": "Nederlands",
-       "code": "+31"
+       "code": "+31",
+       "prijs": "€5,80"
     },
     {
         "land": "Verenigd Koninkrijk",
@@ -15,7 +16,8 @@
         "Sinds": "maart 1707",
         "Inwoners": "64.769.452",
         "taal": "Engels",
-        "code": "+44"
+        "code": "+44",
+        "prijs": "5,80"
      },
      {
         "land": "Verenigde Staten",
@@ -24,7 +26,8 @@
         "Sinds": "juli 1776",
         "Inwoners": "326.625.791",
         "taal": "Engels",
-        "code": "+1"
+        "code": "+1",
+        "prijs": "5,80"
      },
      {
       "land": "Rusland",
@@ -33,7 +36,8 @@
       "Sinds": "januari 1547",
       "Inwoners": "146,793,744",
       "taal": "Russisch",
-      "code": "+7"
+      "code": "+7",
+      "prijs": "5,80"
       },
      {
         "land": "Spanje",
@@ -42,7 +46,8 @@
         "Sinds": "februari 1469",
         "Inwoners": "48.958.159",
         "taal": "Spaans",
-        "code": "+34"
+        "code": "+34",
+        "prijs": "5,80"
      },
      {
       "land": "Portugal",
@@ -51,7 +56,8 @@
       "Sinds": "juli 1139",
       "Inwoners": "10.839.514",
       "taal": "Portugees",
-      "code": "+351"
+      "code": "+351",
+      "prijs": "5,80"
       },
      {
         "land": "Brazilië",
@@ -60,7 +66,8 @@
         "Sinds": "september 1822",
         "Inwoners": "207.353.391",
         "taal": "Portugees",
-        "code": "+55"
+        "code": "+55",
+        "prijs": "5,80"
      },
      {
         "land": "Venezuela",
@@ -69,7 +76,8 @@
         "Sinds": "juli 1811",
         "Inwoners": "31.304.016",
         "taal": "Spaans",
-        "code": "+58"
+        "code": "+58",
+        "prijs": "5,80"
      }
  ]
 

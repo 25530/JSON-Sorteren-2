@@ -25,19 +25,7 @@ const maakTabelKop = (arr) => {
     return kop;
 }
 
-const maakTabelRij = (arr, accent) => {
-    let rij ="";
-    if(accent==true){
-        rij = "<tr class='Selectie__rij--accent'>";
-    } else {
-        rij = "<tr class='Selectie__rij'>";
-    }
-    arr.forEach((item) => {
-        rij += "<td class='Selectie__data'>" + item + "</td>"
-    });
-    rij += "</tr>";
-    return rij;
-}
+
 // van maand naar string januari 0 december 11
 const geefMaand = (maand) => {
     let nummer;
@@ -101,32 +89,38 @@ sorteren: function() {
 },
 
     uitvoeren: function(data) {
-        let uitvoer = maakTabelKop(["land", 
-        "cover", 
-        "Staatshoofd", 
-        "Sinds", 
-        "Inwoners", 
-        "taal", 
-        "code"]);
-        for(let i=0; i<data.length; i++) {
-            //geef rijen afwisselend een accent mee
-            let accent = false;
-            i%2 == 0 ? accent = true : accent = false;
-            let imgElement = "<img src='" 
-            + data[i].cover +
-             "' class='Selectie__cover' alt'"
-              +data[i].land+"'>";
+        //leegmaken
+        document.getElementById('uitvoer').innerHTML = "";
+        data.forEach( land => {
+        let sectie = document.createElement('section');
+        sectie.className = 'landSelectie';
 
-              let staats = maakOpsomming(data[i].Staatshoofd);
-           uitvoer += maakTabelRij([data[i].land,
-            imgElement,
-            staats,
-            data[i].Sinds,
-            data[i].Inwoners,
-            data[i].taal,
-            data[i].code], accent)
-        }
-        document.getElementById('uitvoer').innerHTML = uitvoer;
+        let main = document.createElement('main');
+        main.className = 'boekSelectie__main';
+
+        //cover
+        let afbeelding = document.createElement('img');
+        afbeelding.className = 'landSelectie__cover';
+        afbeelding.setAttribute('src', land.cover);
+        afbeelding.setAttribute('alt', land.naam);
+
+        let naam = document.createElement('h3');
+        naam.className = 'landSelectie__naam';
+        naam.contentText = land.naam;
+
+        // add price
+
+        let prijs = document.createElement('div');
+        prijs.className = 'landSelectie__prijs';
+        prijs.textContent = '€; ' + land.prijs;
+
+        // add element
+        sectie.appendChild(afbeelding);
+        sectie.appendChild(naam);
+        sectie.appendChild(main);
+        sectie.appendChild(prijs);
+        document.getElementById('uitvoer').appendChild(sectie);
+    });
     }
 }
 // keuze voor sorteer opties

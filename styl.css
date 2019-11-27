@@ -13,3 +13,33 @@
 .Selectie__data:nth-child(3) {
 
 }
+.boekselectie {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.boekselectie__prijs {
+    font-size: 2em;
+}
+.winkelwagen {
+    width: 3em;
+    height: 3em;
+    background-image: url('images/winkelwagen.png');
+    background-size: contain;
+    float: right;
+    margin-right: 3em;
+    position: relative;
+}
+.winkelwagen__aantal:not(:empty){
+    background-color: #f00;
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: -.5em;
+    right: -.9em;
+    line-height: .5em;
+    padding: .5em;
+    border-radius: 50%;
+}
