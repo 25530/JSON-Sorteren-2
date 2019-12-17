@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styl.css" />
+  <meta charset="utf-8">
+  <title>Vlaggen shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styl.css">
 </head>
-<body>
-    <div class="winkelwagen"><span class="winkelwagen__aantal"></span></div>
-    <h1>Een inhoud van Landen</h1>
-    <select id="kenmerk">
-        <option value="land" selected>land</option>
-        <option value="Staatshoofd">Staatshoofd</option>
-        <option value="jsDatum">Jaar van Origine</option>
-        <option value="Inwoners">Inwoners</option>
-        <option value="taal">Taal</option>
-        <option value="code">land code</option>
-        </option>
-    </select>
-    <!-- radiobuttons voor oplopend en aflopend sorteren -->
-    <label><input type="radio" name="oplopend" value="1">oplopend</label>
-    <label><input type="radio" name="oplopend" value="-1">aflopend</label>
-    <div id="uitvoer"></div> 
-    <script src="scriptt.js"></script>
+
+<body lang="nl">
+  <header class="header">
+    <a href="bestel.html">
+      <div class="winkelwagen"><span class="winkelwagen__aantal"></span></div>
+    </a>
+    <h1>Vlaggen shop</h1>
+  </header>
+  <select id="kenmerk">
+    <option value="titelUpper" selected>Land</option>
+    <option value="sorteerAuteurs">Staatshoofd</option>
+    <option value="Datums">Onafhankelijkheid</option>
+    <option value="paginas">Bevolking</option>
+    <option value="Taal">Taal</option>
+    <option value="prijs">Prijs</option>
+  </select>
+
+  <!-- radiobuttons voor oplopend en aflopend sorteren -->
+  <label><input type="radio" name="lopend" value="1" checked="checked">oplopend</label>
+  <label><input type="radio" name="lopend" value="-1">aflopend</label>
+  <div id="uitvoer"></div>
+  <script src="shop.js" charset="utf-8"></script>
 </body>
+
 </html>
